@@ -57,6 +57,11 @@ const NavLink = styled.a`
   text-decoration: none;
   font-size: 17px;
   color: var(--color-clear-2);
+  transition: 0.3s;
+
+  :hover {
+    color: var(--color-clear-1);
+  }
 `
 
 const Pike = styled.div`
