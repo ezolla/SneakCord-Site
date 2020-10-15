@@ -59,7 +59,7 @@ const Bold = styled.span`
 const Button = styled.a`
   color: var(--color-white);
   text-decoration: none;
-  background: var(--color-clear-2);
+  background: var(--color-clear-1);
   padding: 20px 53px;
   border-radius: 10px;
   box-shadow: var(--style-shadow-1);
