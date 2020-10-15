@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styled from 'styled-components'
 
 import Header from '../components/Header'
+import Features from '../components/Features'
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
               <Title>Over <Bold>20 commands<br />dedicated to sneaker reselling communities</Bold> on Discord</Title>
               <Button href="https://google.com" target="_blank">Invite to Discord</Button>
             </Hero>
+
+            {/* Features */}
+            <Features />
           </Content>
         </Background>
       </main>
