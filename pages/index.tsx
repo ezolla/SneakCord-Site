@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 
+import Header from '../components/Header'
+
 export default function Home() {
   return (
     <>
@@ -12,6 +14,10 @@ export default function Home() {
       <main>
         <Background>
           <Content>
+            {/* Header */}
+            <Header />
+
+            {/* Hero */}
             <Hero>
               <Title>Over <Bold>20 commands<br />dedicated to sneaker reselling communities</Bold> on Discord</Title>
               <Button href="https://google.com" target="_blank">Invite to Discord</Button>
@@ -45,7 +51,7 @@ const Content = styled.div`
 const Hero = styled.div`
   text-align: center;
   width: 700px;
-  margin: 0 auto;
+  margin: 100px auto 0;
 `
 
 const Title = styled.h1`
