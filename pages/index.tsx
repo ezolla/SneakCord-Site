@@ -28,6 +28,30 @@ export default function Home() {
             <Features />
           </Content>
         </Background>
+
+        {/* Logo Marquee */}
+        <LogoMarquee>
+          <div className="strip-1">
+            <img src="/shopify.png" alt="Shopify" />
+            <img src="/stadiumgoods.png" alt="Stadium Goods" />
+            <img src="/supreme.png" alt="Supreme" />
+            <img src="/flightclub.png" alt="Flight Club" />
+            <img src="/funko.png" alt="Funko" />
+            <img src="/stockx.png" alt="StockX" />
+            <img src="/ebay.png" alt="eBay" />
+            <img src="/goat.png" alt="Goat" />
+          </div>
+          <div className="strip-2"> 
+            <img src="/shopify.png" alt="Shopify" />
+            <img src="/stadiumgoods.png" alt="Stadium Goods" />
+            <img src="/supreme.png" alt="Supreme" />
+            <img src="/flightclub.png" alt="Flight Club" />
+            <img src="/funko.png" alt="Funko" />
+            <img src="/stockx.png" alt="StockX" />
+            <img src="/ebay.png" alt="eBay" />
+            <img src="/goat.png" alt="Goat" />
+          </div>
+        </LogoMarquee>
       </main>
     </>
   )
@@ -77,5 +101,37 @@ const Button = styled.a`
 
   :hover {
     box-shadow: var(--style-shadow-2);
+  }
+`
+
+const LogoMarquee = styled.div`
+  max-width: 100%;
+  margin: 50px auto 0;
+  position: inline-block;
+  overflow-x: visible;
+  white-space: nowrap;
+  animation: 25s linear infinite marquee;
+
+  div {
+    display: inline-block;
+
+    img {
+      display:inline-block;
+      margin-right: 60px;
+      vertical-align: middle;
+    }
+  }
+
+  .strip-1 {
+    /* border: 1px solid blue; */
+  }
+
+  .strip-2 {
+    /* border: 1px solid green; */
+  }
+
+  @keyframes marquee {
+    0% { transform: translate3d(0px, 0px, 0px); }
+    100% { transform: translate3d(-110%, 0px, 0px); }
   }
 `
