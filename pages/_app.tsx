@@ -10,8 +10,6 @@ const GlobalStyle = createGlobalStyle`
     --style-blur: blur(40px);
     --style-shadow-1: 0px 10px 20px rgba(0, 0, 0, 0.25);
     --style-shadow-2: 0px 20px 40px rgba(0, 0, 0, 0.25);
-    --breakpoint-mobile: 620px;
-    --breakpoint-tablet: 920px;
   }
 
   body {
@@ -27,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     margin: 0;
 
-    @media (max-width: var(----breakpoint-mobile)) {
+    @media (max-width: 620px) {
       font-size: 30px;
     }
   }

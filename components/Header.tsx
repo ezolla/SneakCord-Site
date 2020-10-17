@@ -5,20 +5,20 @@ export default function Header() {
   return (
     <HeaderComponent>
       {/* Logo */}
-      <LogoContainer>
+      <div>
         <a href="/"><img src="/logo-extended.svg" alt="SneakCord Logo" /></a>
-      </LogoContainer>
+      </div>
 
       {/* Navigation */}
-      <NavContainer>
+      <div>
         <Nav>
-          <NavItem><NavLink href="https://google.com">Contribute</NavLink></NavItem>
-          <NavItem><NavLink href="https://google.com">Support</NavLink></NavItem>
-          <NavItem><NavLink href="https://google.com">Author</NavLink></NavItem>
+          <NavItem><NavLink href="https://google.com" className="link">Contribute</NavLink></NavItem>
+          <NavItem><NavLink href="https://google.com" className="link">Support</NavLink></NavItem>
+          <NavItem><NavLink href="https://google.com" className="link">Author</NavLink></NavItem>
           <NavItem><Pike className="pike" /></NavItem>
           <NavItem><NavLink href="https://google.com" style={{ color: 'var(--color-clear-2)' }}><FaGithub size={25} /></NavLink></NavItem>
         </Nav>
-      </NavContainer>
+      </div>
     </HeaderComponent>
   )
 }
@@ -28,11 +28,11 @@ const HeaderComponent = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1030px) {
+    padding: 0 30px;
+  }
 `
-
-const LogoContainer = styled.div``
-
-const NavContainer = styled.div``
 
 const Nav = styled.ul`
   list-style-type: none;
@@ -43,6 +43,12 @@ const Nav = styled.ul`
 const NavItem = styled.li`
   float: left;
   margin: 10px 25px 0 0;
+
+  .link {
+    @media (max-width: 620px) {
+      display: none;
+    }
+  }
 
   .pike {
     margin-top: -8px;
@@ -67,4 +73,8 @@ const NavLink = styled.a`
 const Pike = styled.div`
   border-left: 1.5px solid var(--color-clear-1);
   height: 40px;
+
+  @media (max-width: 620px) {
+    display: none;
+  }
 `

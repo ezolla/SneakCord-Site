@@ -34,6 +34,15 @@ const FeaturesComponent = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 180px;
+
+  @media (max-width: 1030px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+    margin: 100px auto 0;
+  }
 `
 
 const Feature = styled.div`
@@ -57,9 +66,18 @@ const Feature = styled.div`
       font-size: 15px;
     }
   }
+
+  @media (max-width: 920px) {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
 `
 
 const Pike = styled.div`
   border-left: 1.5px solid var(--color-clear-1);
   height: 60px;
+
+  @media (max-width: 920px) {
+    display: none;
+  }
 `

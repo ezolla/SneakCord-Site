@@ -20,7 +20,7 @@ export default function Home() {
 
             {/* Hero */}
             <Hero>
-              <Title>Over <Bold>20 commands<br />dedicated to sneaker reselling communities</Bold> on Discord</Title>
+              <Title>Over <Bold>20 commands dedicated to sneaker reselling communities</Bold> on Discord</Title>
               <Button href="https://google.com" target="_blank">Invite to Discord</Button>
             </Hero>
 
@@ -64,11 +64,12 @@ const Background = styled.div`
   padding: 50px 0 100px;
   border-radius: 0 0 50px 50px;
 
-  @media (max-width: var(--breakpoint-tablet)) {
+  @media (max-width: 920px) {
     padding-top: 40px;
+    padding-bottom: 60px;
   }
 
-  @media (max-width: var(--breakpoint-mobile)) {
+  @media (max-width: 620px) {
     padding-top: 20px;
   }
 `
@@ -80,8 +81,13 @@ const Content = styled.div`
 
 const Hero = styled.div`
   text-align: center;
-  width: 700px;
+  width: 690px;
   margin: 100px auto 0;
+
+  @media (max-width: 730px) {
+    width: calc(100% - 30px);
+    margin-top: 60px;
+  }
 `
 
 const Title = styled.h1`
