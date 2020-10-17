@@ -31,26 +31,28 @@ export default function Home() {
 
         {/* Logo Marquee */}
         <LogoMarquee>
-          <div className="strip-1">
-            <img src="/shopify.png" alt="Shopify" />
-            <img src="/stadiumgoods.png" alt="Stadium Goods" />
-            <img src="/supreme.png" alt="Supreme" />
-            <img src="/flightclub.png" alt="Flight Club" />
-            <img src="/funko.png" alt="Funko" />
-            <img src="/stockx.png" alt="StockX" />
-            <img src="/ebay.png" alt="eBay" />
-            <img src="/goat.png" alt="Goat" />
-          </div>
-          <div className="strip-2"> 
-            <img src="/shopify.png" alt="Shopify" />
-            <img src="/stadiumgoods.png" alt="Stadium Goods" />
-            <img src="/supreme.png" alt="Supreme" />
-            <img src="/flightclub.png" alt="Flight Club" />
-            <img src="/funko.png" alt="Funko" />
-            <img src="/stockx.png" alt="StockX" />
-            <img src="/ebay.png" alt="eBay" />
-            <img src="/goat.png" alt="Goat" />
-          </div>
+          <LogoWrapper>
+            <LogoContainer>
+              <Logo><img src="/shopify.png" alt="Shopify" /></Logo>
+              <Logo><img src="/stadiumgoods.png" alt="Stadium Goods" /></Logo>
+              <Logo><img src="/supreme.png" alt="Supreme" /></Logo>
+              <Logo><img src="/flightclub.png" alt="Flight Club" /></Logo>
+              <Logo><img src="/funko.png" alt="Funko" /></Logo>
+              <Logo><img src="/stockx.png" alt="StockX" /></Logo>
+              <Logo><img src="/ebay.png" alt="eBay" /></Logo>
+              <Logo><img src="/goat.png" alt="Goat" /></Logo>
+            </LogoContainer>
+            <LogoContainer>
+              <Logo><img src="/shopify.png" alt="Shopify" /></Logo>
+              <Logo><img src="/stadiumgoods.png" alt="Stadium Goods" /></Logo>
+              <Logo><img src="/supreme.png" alt="Supreme" /></Logo>
+              <Logo><img src="/flightclub.png" alt="Flight Club" /></Logo>
+              <Logo><img src="/funko.png" alt="Funko" /></Logo>
+              <Logo><img src="/stockx.png" alt="StockX" /></Logo>
+              <Logo><img src="/ebay.png" alt="eBay" /></Logo>
+              <Logo><img src="/goat.png" alt="Goat" /></Logo>
+            </LogoContainer>
+          </LogoWrapper>
         </LogoMarquee>
       </main>
     </>
@@ -105,33 +107,38 @@ const Button = styled.a`
 `
 
 const LogoMarquee = styled.div`
-  max-width: 100%;
-  margin: 50px auto 0;
-  position: inline-block;
-  overflow-x: visible;
+  overflow: hidden;
   white-space: nowrap;
-  animation: 25s linear infinite marquee;
+  margin: 50px 0;
+`
 
-  div {
-    display: inline-block;
-
-    img {
-      display:inline-block;
-      margin-right: 60px;
-      vertical-align: middle;
-    }
-  }
-
-  .strip-1 {
-    /* border: 1px solid blue; */
-  }
-
-  .strip-2 {
-    /* border: 1px solid green; */
-  }
+const LogoWrapper = styled.div`
+  display: flex;
+  animation: marquee 20s linear infinite;
 
   @keyframes marquee {
-    0% { transform: translate3d(0px, 0px, 0px); }
-    100% { transform: translate3d(-110%, 0px, 0px); }
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+`
+
+const LogoContainer = styled.div`
+  display: inline-block;
+`
+
+const Logo = styled.div`
+  margin-right: 75px;
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+  vertical-align: middle;
+
+  :hover {
+    opacity: 1;
   }
 `
