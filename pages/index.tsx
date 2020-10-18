@@ -21,7 +21,7 @@ export default function Home() {
             {/* Hero */}
             <Hero>
               <Title>Over <Bold>20 commands dedicated to sneaker reselling communities</Bold> on Discord</Title>
-              <Button href="https://google.com" target="_blank">Invite to Discord</Button>
+              <Button href="https://discord.com/oauth2/authorize?client_id=740425221861015572&scope=bot" target="_blank">Invite to Discord</Button>
             </Hero>
 
             {/* Features */}

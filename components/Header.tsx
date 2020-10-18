@@ -12,11 +12,11 @@ export default function Header() {
       {/* Navigation */}
       <div>
         <Nav>
-          <NavItem><NavLink href="https://google.com" className="link">Contribute</NavLink></NavItem>
-          <NavItem><NavLink href="https://google.com" className="link">Support</NavLink></NavItem>
-          <NavItem><NavLink href="https://google.com" className="link">Author</NavLink></NavItem>
+          <NavItem><NavLink href="https://github.com/ezolla/SneakCord/blob/master/README.md#contributing" className="link">Contribute</NavLink></NavItem>
+          <NavItem><NavLink href="https://github.com/ezolla/SneakCord/blob/master/README.md#support" className="link">Support</NavLink></NavItem>
+          <NavItem><NavLink href="https://twitter.com/ethanzolla" className="link">Author</NavLink></NavItem>
           <NavItem><Pike className="pike" /></NavItem>
-          <NavItem><NavLink href="https://google.com" style={{ color: 'var(--color-clear-2)' }}><FaGithub size={25} /></NavLink></NavItem>
+          <NavItem><NavLink href="https://github.com/ezolla/SneakCord"><FaGithub size={25} /></NavLink></NavItem>
         </Nav>
       </div>
     </HeaderComponent>
