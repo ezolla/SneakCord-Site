@@ -61,11 +61,10 @@ export default function Home() {
 
 const Background = styled.div`
   background: var(--color-purple-gradient);
-  padding: 50px 0 100px;
+  padding: 40px 0 100px;
   border-radius: 0 0 50px 50px;
 
   @media (max-width: 920px) {
-    padding-top: 40px;
     padding-bottom: 60px;
   }
 
