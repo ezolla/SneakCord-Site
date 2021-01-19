@@ -20,8 +20,15 @@ export default function Home() {
 
             {/* Hero */}
             <Hero>
-              <Title>Over <Bold>20 commands dedicated to sneaker reselling communities</Bold> on Discord</Title>
-              <Button href="https://discord.com/oauth2/authorize?client_id=740425221861015572&scope=bot" target="_blank">Invite to Discord</Button>
+              <Title>
+                Over <Bold>20 commands dedicated to sneaker reselling communities</Bold> on Discord
+              </Title>
+              <Button
+                href="https://discord.com/oauth2/authorize?client_id=740425221861015572&scope=bot"
+                target="_blank"
+              >
+                Invite to Discord
+              </Button>
             </Hero>
 
             {/* Features */}
@@ -33,24 +40,56 @@ export default function Home() {
         <LogoMarquee>
           <LogoWrapper>
             <LogoContainer>
-              <Logo><img src="/shopify.png" alt="Shopify" /></Logo>
-              <Logo><img src="/stadiumgoods.png" alt="Stadium Goods" /></Logo>
-              <Logo><img src="/supreme.png" alt="Supreme" /></Logo>
-              <Logo><img src="/flightclub.png" alt="Flight Club" /></Logo>
-              <Logo><img src="/funko.png" alt="Funko" /></Logo>
-              <Logo><img src="/stockx.png" alt="StockX" /></Logo>
-              <Logo><img src="/ebay.png" alt="eBay" /></Logo>
-              <Logo><img src="/goat.png" alt="Goat" /></Logo>
+              <Logo>
+                <img src="/shopify.png" alt="Shopify" />
+              </Logo>
+              <Logo>
+                <img src="/stadiumgoods.png" alt="Stadium Goods" />
+              </Logo>
+              <Logo>
+                <img src="/supreme.png" alt="Supreme" />
+              </Logo>
+              <Logo>
+                <img src="/flightclub.png" alt="Flight Club" />
+              </Logo>
+              <Logo>
+                <img src="/funko.png" alt="Funko" />
+              </Logo>
+              <Logo>
+                <img src="/stockx.png" alt="StockX" />
+              </Logo>
+              <Logo>
+                <img src="/ebay.png" alt="eBay" />
+              </Logo>
+              <Logo>
+                <img src="/goat.png" alt="Goat" />
+              </Logo>
             </LogoContainer>
             <LogoContainer>
-              <Logo><img src="/shopify.png" alt="Shopify" /></Logo>
-              <Logo><img src="/stadiumgoods.png" alt="Stadium Goods" /></Logo>
-              <Logo><img src="/supreme.png" alt="Supreme" /></Logo>
-              <Logo><img src="/flightclub.png" alt="Flight Club" /></Logo>
-              <Logo><img src="/funko.png" alt="Funko" /></Logo>
-              <Logo><img src="/stockx.png" alt="StockX" /></Logo>
-              <Logo><img src="/ebay.png" alt="eBay" /></Logo>
-              <Logo><img src="/goat.png" alt="Goat" /></Logo>
+              <Logo>
+                <img src="/shopify.png" alt="Shopify" />
+              </Logo>
+              <Logo>
+                <img src="/stadiumgoods.png" alt="Stadium Goods" />
+              </Logo>
+              <Logo>
+                <img src="/supreme.png" alt="Supreme" />
+              </Logo>
+              <Logo>
+                <img src="/flightclub.png" alt="Flight Club" />
+              </Logo>
+              <Logo>
+                <img src="/funko.png" alt="Funko" />
+              </Logo>
+              <Logo>
+                <img src="/stockx.png" alt="StockX" />
+              </Logo>
+              <Logo>
+                <img src="/ebay.png" alt="eBay" />
+              </Logo>
+              <Logo>
+                <img src="/goat.png" alt="Goat" />
+              </Logo>
             </LogoContainer>
           </LogoWrapper>
         </LogoMarquee>
@@ -118,7 +157,7 @@ const LogoMarquee = styled.div`
 `
 
 const LogoWrapper = styled.div`
-  display: flex;
+  display: inline-flex;
   animation: marquee 20s linear infinite;
 
   @keyframes marquee {
